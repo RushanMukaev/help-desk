@@ -1,0 +1,163 @@
+body {
+    font-size: 20px;
+    background: #e3e3e3;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #55ba56; /* Зеленый фон */
+    height: 50px;
+    border: 1px solid grey;
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Делаем элемент блочным */
+    font-size: 20px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы снаружи кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 8px; /* Скругленные углы */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+button:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}
+
+button:active {
+    background-color: #3e8e41; /* Цвет фона при нажатии */
+    box-shadow: inset 0 3px #666; /* Вдавленный эффект тени */
+}
+
+button.isChecked {
+    background-color: #4CAF50; /* Зеленый цвет для состояния "Checked" */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 50%;
+}
+
+button.unChecked {
+    background-color: #ffffff; /* Красный цвет для состояния "Unchecked" */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 50%;
+}
+
+.help-desk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-desk-control {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.add-ticket {
+
+}
+
+.tickets-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ticket {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto; /* Задаем колонки */
+    gap: 10px;
+    padding: 10px;
+}
+
+.ticket:hover {
+    background-color: #cdcdcd;
+    border-radius: 10px;
+}
+
+.ticket-text {
+    padding-top: 16px;
+    margin-left: 40px;
+}
+.ticket-text .ticket-name {
+
+}
+
+.ticket-text .ticket-description {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.ticket-created {
+    padding-top: 16px;
+    margin-right: 40px;
+}
+
+
+
+.form {
+    position: fixed; /* Фиксированное положение относительно окна браузера */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-size: 24px;
+}
+.form-update {
+    background-color: #fff; /* Белый фон для формы */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Небольшая тень для придания глубины */
+    max-width: 500px; /* Максимальная ширина формы */
+    width: 100%;
+}
+
+.form-create {
+    background-color: #fff; /* Белый фон для формы */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Небольшая тень для придания глубины */
+    max-width: 500px; /* Максимальная ширина формы */
+    width: 100%;
+}
+
+.form-example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end ;
+    padding: 10px;
+}
+
+.form-name {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-description {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+input {
+    font-size: 24px;
+}
+
+textarea {
+    font-size: 24px;
+}
+
