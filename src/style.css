@@ -92,6 +92,7 @@ button.unChecked {
 }
 
 .ticket-created {
+    color: #515151;
     padding-top: 16px;
     margin-right: 40px;
 }

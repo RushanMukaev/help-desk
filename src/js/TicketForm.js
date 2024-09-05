@@ -1,5 +1,4 @@
 import Ticket from "./Ticket.js";
-import * as ticket from "date-fns/locale";
 import TicketView from "./TicketView.js";
 import TicketService from "./TicketService.js";
 

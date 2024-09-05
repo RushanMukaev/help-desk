@@ -1,6 +1,5 @@
 import TicketService from "./TicketService";
 import TicketView from "./TicketView.js";
-import Ticket from "./Ticket.js";
 import TicketForm from "./TicketForm.js";
 
 /**
